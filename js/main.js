@@ -377,6 +377,9 @@ function initializeApp() {
   if (dynamicText) {
     typeEffect();
   }
+
+  // Initialize Mouse Parallax
+  initMouseParallax();
 }
 
 // Run initialization when components or DOM are ready
@@ -386,3 +389,23 @@ if (document.readyState === 'loading') {
   initializeApp();
 }
 document.addEventListener('components-ready', initializeApp);
+
+// =========================================================================
+// PREMIUM BACKGROUND MOUSE PARALLAX EFFECT
+// =========================================================================
+function initMouseParallax() {
+  window.addEventListener('mousemove', (e) => {
+    if (document.body.classList.contains('opt4-active')) {
+      const mouseX = (e.clientX / window.innerWidth) - 0.5;
+      const mouseY = (e.clientY / window.innerHeight) - 0.5;
+
+      // Glow backdrops move with mouse (slight drift)
+      document.documentElement.style.setProperty('--tx-parallax-glow', (mouseX * 45) + 'px');
+      document.documentElement.style.setProperty('--ty-parallax-glow', (mouseY * 45) + 'px');
+
+      // Dashboard/mockups move in opposite direction (depth effect)
+      document.documentElement.style.setProperty('--tx-parallax-dash', (mouseX * -30) + 'px');
+      document.documentElement.style.setProperty('--ty-parallax-dash', (mouseY * -30) + 'px');
+    }
+  });
+}

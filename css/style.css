@@ -190,3 +190,115 @@ html {
   border-right: 2px solid #ff5a1f;
   animation: blink-caret 0.75s step-end infinite;
 }
+
+/* =========================================================================
+   PREMIUM BACKGROUND CUSTOMIZER & ANIMATIONS (Customizer options)
+   ========================================================================= */
+
+/* Body Background Image Implementation */
+body.bg-image-active {
+  background-image: var(--bg-overlay, linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85))), url('../img/bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Make page sections translucent/transparent to reveal the background image */
+body.bg-image-active section,
+body.bg-image-active footer,
+body.opt3-active section,
+body.opt3-active footer {
+  background-color: transparent !important;
+}
+
+/* Option 1: Floating Glow Animation */
+@keyframes floatGlow {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(45px, -25px); }
+  100% { transform: translate(0, 0); }
+}
+
+.opt1-active .glow-backdrop {
+  animation: floatGlow 14s ease-in-out infinite !important;
+}
+
+/* Option 2: Moving Grid Animation */
+@keyframes moveGrid {
+  from { background-position: 0 0; }
+  to { background-position: 60px 60px; }
+}
+
+.opt2-active .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 90, 31, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 90, 31, 0.08) 1px, transparent 1px) !important;
+  animation: moveGrid 12s linear infinite !important;
+}
+
+/* Option 3: Dashboard Background Drift Elements */
+.bg-dashboard-element-left,
+.bg-dashboard-element-right {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: blur(2px) grayscale(10%);
+}
+
+.opt3-active .bg-dashboard-element-left,
+.opt3-active .bg-dashboard-element-right {
+  opacity: 0.18;
+}
+
+.bg-dashboard-element-left {
+  top: 25%;
+  left: -8%;
+  width: 35%;
+  max-width: 500px;
+}
+
+.bg-dashboard-element-right {
+  bottom: 15%;
+  right: -8%;
+  width: 35%;
+  max-width: 500px;
+}
+
+@keyframes driftLeft {
+  0% { transform: translateX(0) translateY(0) rotate(-6deg); }
+  50% { transform: translateX(50px) translateY(-18px) rotate(-3deg); }
+  100% { transform: translateX(0) translateY(0) rotate(-6deg); }
+}
+
+@keyframes driftRight {
+  0% { transform: translateX(0) translateY(0) rotate(6deg); }
+  50% { transform: translateX(-50px) translateY(18px) rotate(3deg); }
+  100% { transform: translateX(0) translateY(0) rotate(6deg); }
+}
+
+.opt3-active .bg-dashboard-element-left img {
+  animation: driftLeft 12s ease-in-out infinite;
+}
+
+.opt3-active .bg-dashboard-element-right img {
+  animation: driftRight 15s ease-in-out infinite;
+}
+
+/* Option 4: Mouse Parallax Custom Transitions */
+.opt4-active .glow-backdrop {
+  transform: translate(var(--tx-parallax-glow, 0px), var(--ty-parallax-glow, 0px));
+  transition: transform 0.4s cubic-bezier(0.1, 0.8, 0.2, 1);
+}
+
+.opt4-active #hero .animate-float-gentle img {
+  transform: rotate(-4deg) scale(1.1) translate(var(--tx-parallax-dash, 0px), var(--ty-parallax-dash, 0px)) !important;
+  transition: transform 0.45s cubic-bezier(0.1, 0.8, 0.2, 1) !important;
+}
+
+/* Pause the auto-floating animation slightly so the parallax is more prominent */
+.opt4-active #hero .animate-float-gentle {
+  animation-play-state: paused !important;
+}
+
