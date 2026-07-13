@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Brand gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0c0e" />
+      <stop offset="100%" stop-color="#141418" />
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35" />
+      <stop offset="100%" stop-color="#ff3f00" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#ff5a1f" flood-opacity="0.5" />
+    </filter>
+  </defs>
+  
+  <!-- Smooth rounded square background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" stroke="#27272a" stroke-width="12" />
+  
+  <!-- Stylized tech motion G emblem with arrow -->
+  <g transform="translate(64, 64)" filter="url(#glow)">
+    <!-- Base Circular Arch of G -->
+    <path d="M 280,80 
+             A 130,130 0 1,0 280,300 
+             L 280,240 
+             A 70,70 0 1,1 280,140 
+             L 280,80 Z" 
+          fill="url(#brandGrad)" />
+          
+    <!-- Dynamic horizontal crossbar and arrow (automation/motion) -->
+    <path d="M 240,160 L 340,160 L 340,130 L 384,190 L 340,250 L 340,220 L 240,220 Z" fill="#ffffff" />
+  </g>
+</svg>

@@ -1,0 +1,1545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaw Smart Advertising | Smart Ads & Automation Systems</title>
+    <meta
+      name="description"
+      content="We build systems that bring you more customers on autopilot. Book your free strategy call today."
+    />
+    <link class="favicon" rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Tailwind CSS v3 via Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                DEFAULT: "#ff5a1f", // Primary Accent Orange
+                dark: "#e04812",
+                light: "#ff7747",
+                glow: "rgba(255, 90, 31, 0.15)",
+              },
+              bgDark: {
+                DEFAULT: "#050505",
+                card: "#0c0c0e",
+                cardHover: "#121215",
+                border: "#16161a",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-bgDark text-zinc-100 font-sans antialiased overflow-x-hidden bg-grid-pattern"
+  >
+    <!-- Sleek Top Scroll Progress Bar -->
+    <div
+      id="scroll-progress"
+      class="fixed top-0 left-0 h-[2.5px] bg-brand z-50 transition-all duration-75"
+      style="width: 0%"
+    ></div>
+
+    <!-- Interactive Ambient Mouse Glow (SaaS Agency Signature) -->
+    <div
+      id="mouse-glow"
+      class="w-[300px] h-[300px] bg-brand/5 rounded-full blur-[100px] pointer-events-none fixed z-30 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 hidden lg:block"
+    ></div>
+
+    <!-- Dynamic Section Placeholders -->
+    <!-- ================= Header (Premium Sticky Navbar) ================= -->
+    <header
+      id="header"
+      class="w-full fixed top-0 left-0 z-50 bg-transparent py-6 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between"
+      >
+        <!-- Left: Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <span
+            class="font-display font-extrabold text-lg tracking-tight text-brand"
+            >GALAW</span
+          >
+          <span class="font-sans font-bold text-xs tracking-wider text-white"
+            >SMART ADVERTISING</span
+          >
+        </a>
+
+        <!-- Right: Subtitle Text -->
+        <div
+          class="hidden md:block text-[11px] font-bold text-zinc-400 tracking-wider"
+        >
+          Smart Ads. Smarter Automation.
+          <span class="text-brand">Real Results.</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= Hero Section ================= -->
+    <section
+      id="hero"
+      class="relative pt-24 pb-12 md:pt-28 md:pb-16 flex items-center justify-center overflow-hidden"
+    >
+      <!-- Laptop Dashboard Mockup integrated behind hero copywriting on the right with float animation -->
+      <div
+        class="absolute top-[12%] right-[-5%] w-[52%] h-auto opacity-70 lg:opacity-85 pointer-events-none select-none z-0 hidden lg:block animate-float-gentle"
+      >
+        <img
+          src="img/laptop_dashboard.png"
+          alt=""
+          class="w-full h-auto object-contain transform -rotate-[4deg] scale-110"
+        />
+      </div>
+
+      <!-- Glow Backdrop Effects -->
+      <div class="glow-backdrop top-[25%] left-[15%] opacity-70"></div>
+      <div class="glow-backdrop -top-20 -right-20 animate-pulse-glow"></div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10 w-full">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+        >
+          <!-- Left Side: Copywriting -->
+          <div
+            class="lg:col-span-7 flex flex-col items-start text-left relative z-10 lg:-mt-10"
+          >
+            <!-- Small Badge -->
+            <div
+              class="inline-flex items-center px-4 py-1.5 border border-brand/50 bg-transparent rounded-full mb-4"
+              data-aos="fade-down"
+              data-aos-duration="600"
+            >
+              <span
+                class="text-[9px] font-bold uppercase tracking-widest text-brand"
+                >Smart Advertising (Ads + Automation)</span
+              >
+            </div>
+
+            <!-- Headline -->
+            <h1
+              class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[50px] tracking-tight leading-[1.08] text-white mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="800"
+            >
+              We Build Systems<br />
+              That Bring You<br />
+              <span
+                class="text-brand animate-caret pr-1.5 inline-block"
+                id="dynamic-text"
+                >More Customers</span
+              ><br />
+              — On Autopilot.
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="text-zinc-400 text-xs sm:text-sm max-w-xl mb-6 leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              We help service businesses generate more leads, close more
+              clients, and save hours every week using smart ads and automation
+              systems.
+            </p>
+
+            <!-- 3 Benefits Checklist -->
+            <div
+              class="grid grid-cols-3 gap-4 sm:gap-6 w-full max-w-lg"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
+              <!-- Benefit 1 -->
+              <div class="flex flex-col items-start">
+                <div class="text-brand mb-2">
+                  <!-- Target Icon -->
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <span class="text-[11px] font-bold text-white leading-tight"
+                  >More<br />Qualified Leads</span
+                >
+              </div>
+
+              <!-- Benefit 2 -->
+              <div class="flex flex-col items-start">
+                <div class="text-brand mb-2">
+                  <!-- Clock Icon -->
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <span class="text-[11px] font-bold text-white leading-tight"
+                  >Save Time<br />& Resources</span
+                >
+              </div>
+
+              <!-- Benefit-3 -->
+              <div class="flex flex-col items-start">
+                <div class="text-brand mb-2">
+                  <!-- Scale Chart Icon -->
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2.5"
+                  >
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                </div>
+                <span class="text-[11px] font-bold text-white leading-tight"
+                  >Scale Your Business<br />With Systems</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Lead Capture Form Card -->
+          <div
+            class="lg:col-span-5 w-full relative z-10"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="800"
+          >
+            <div
+              id="booking-card"
+              class="bg-[#0c0c0e]/85 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 shadow-2xl relative hover:shadow-[0_0_30px_rgba(255,90,31,0.08)] transition-all duration-500"
+            >
+              <!-- Pulse Status Indicator -->
+              <div class="flex items-center space-x-1.5 mb-2.5">
+                <span class="flex h-2 w-2 relative">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                  ></span>
+                </span>
+                <span
+                  class="text-[9px] font-bold uppercase tracking-widest text-emerald-400"
+                  >Ad Specialist Online Now</span
+                >
+              </div>
+
+              <h2
+                class="font-display font-extrabold text-xl sm:text-2xl text-brand mb-1"
+              >
+                Book a Free Strategy Call
+              </h2>
+              <p class="text-zinc-400 text-[11px] mb-4 leading-relaxed">
+                Fill out the form below so we can learn more about your
+                business.
+              </p>
+
+              <form id="booking-form" class="space-y-3">
+                <!-- Full Name -->
+                <div>
+                  <label
+                    for="full-name"
+                    class="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-1"
+                    >Full Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="full-name"
+                    required
+                    placeholder="Juan Dela Cruz"
+                    class="w-full custom-input px-4 py-2.5 rounded text-white text-xs placeholder-zinc-500 bg-black/60 border border-white/10 focus:border-brand transition-colors"
+                  />
+                </div>
+
+                <!-- Business Name -->
+                <div>
+                  <label
+                    for="business-name"
+                    class="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-1"
+                    >Business Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="business-name"
+                    required
+                    placeholder="Your Business"
+                    class="w-full custom-input px-4 py-2.5 rounded text-white text-xs placeholder-zinc-500 bg-black/60 border border-white/10 focus:border-brand transition-colors"
+                  />
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                  <label
+                    for="email"
+                    class="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-1"
+                    >Email Address *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="juan@email.com"
+                    class="w-full custom-input px-4 py-2.5 rounded text-white text-xs placeholder-zinc-500 bg-black/60 border border-white/10 focus:border-brand transition-colors"
+                  />
+                </div>
+
+                <!-- Phone Number -->
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-1"
+                    >Phone Number *</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    required
+                    placeholder="0912 345 6789"
+                    class="w-full custom-input px-4 py-2.5 rounded text-white text-xs placeholder-zinc-500 bg-black/60 border border-white/10 focus:border-brand transition-colors"
+                  />
+                </div>
+
+                <!-- Monthly Revenue Dropdown -->
+                <div>
+                  <label
+                    for="revenue"
+                    class="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-1"
+                    >Monthly Revenue *</label
+                  >
+                  <div class="relative">
+                    <select
+                      id="revenue"
+                      required
+                      class="w-full custom-input px-4 py-2.5 rounded text-zinc-300 text-xs appearance-none bg-black/60 border border-white/10 cursor-pointer focus:border-brand transition-colors"
+                    >
+                      <option value="" disabled selected>Select range</option>
+                      <option value="under-100k">Under ₱100k</option>
+                      <option value="100k-500k">₱100k - ₱500k</option>
+                      <option value="500k-1m">₱500k - ₱1M</option>
+                      <option value="1m-plus">₱1M+</option>
+                    </select>
+                    <div
+                      class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-zinc-500"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Biggest Challenge Textarea -->
+                <div>
+                  <label
+                    for="challenge"
+                    class="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-1"
+                    >What is your biggest challenge right now? *</label
+                  >
+                  <textarea
+                    id="challenge"
+                    rows="2"
+                    required
+                    placeholder="Type your answer here..."
+                    class="w-full custom-input px-4 py-2.5 rounded text-white text-xs placeholder-zinc-500 bg-black/60 border border-white/10 resize-none focus:border-brand transition-colors"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full py-4 bg-brand hover:bg-brand-dark text-white font-bold rounded shadow-lg shadow-brand/20 hover:shadow-brand/35 transition-all duration-300 text-xs uppercase tracking-widest"
+                >
+                  SUBMIT & BOOK MY CALL
+                </button>
+
+                <!-- Privacy Notice -->
+                <div
+                  class="flex items-center justify-center space-x-1.5 text-zinc-550 text-[9px] pt-1"
+                >
+                  <svg
+                    class="w-3.5 h-3.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span
+                    >We respect your <span class="text-brand">privacy</span>.
+                    Your information is safe with us.</span
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Problems Section ================= -->
+    <section
+      id="roadblocks"
+      class="relative py-24 border-t border-white/[0.03] bg-bgDark bg-grid-pattern"
+    >
+      <div class="glow-backdrop bottom-0 right-0 opacity-40"></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <!-- Split Layout: Sticky Title Left, Grid Right -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+          <!-- Left Title (col-span-4 for clean alignment) -->
+          <div
+            class="lg:col-span-4 flex flex-col justify-start"
+            data-aos="fade-right"
+          >
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-brand mb-2.5 block"
+              >WHAT WE HELP YOU SOLVE</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight leading-tight text-white mb-4"
+            >
+              Tired of these<br />business
+              <span class="text-brand">roadblocks?</span>
+            </h2>
+            <p
+              class="text-zinc-555 text-xs sm:text-sm leading-relaxed max-w-sm"
+            >
+              Service businesses struggle to grow when their marketing and
+              operations aren't built on systems. These common challenges
+              deplete budgets and limit your potential.
+            </p>
+          </div>
+
+          <!-- Roadblock Cards Grid Right (2 Columns on Desktop/Tablet, 1 Column on Mobile) -->
+          <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- Card 1 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_10px_25px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 rounded-lg p-5 flex flex-col justify-between h-full"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div>
+                <div class="flex items-center space-x-3 mb-3">
+                  <div
+                    class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                  >
+                    <svg
+                      class="w-4.5 h-4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 8v8M8 12h8"></path>
+                    </svg>
+                  </div>
+                  <h3
+                    class="font-display font-bold text-xs sm:text-sm text-white"
+                  >
+                    No Consistent Leads
+                  </h3>
+                </div>
+                <p class="text-zinc-555 text-[11px] leading-relaxed mb-4">
+                  Leads come and go. You never know where your next client will
+                  come from.
+                </p>
+              </div>
+              <span
+                class="text-[9px] font-bold text-brand uppercase tracking-wider block mt-auto pt-2"
+                >Cost: Lost Revenue</span
+              >
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_10px_25px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 rounded-lg p-5 flex flex-col justify-between h-full"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div>
+                <div class="flex items-center space-x-3 mb-3">
+                  <div
+                    class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                  >
+                    <svg
+                      class="w-4.5 h-4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2.5"
+                    >
+                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                      <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                  </div>
+                  <h3
+                    class="font-display font-bold text-xs sm:text-sm text-white"
+                  >
+                    Wasted Ad Spend
+                  </h3>
+                </div>
+                <p class="text-zinc-555 text-[11px] leading-relaxed mb-4">
+                  Running ads but not getting results? You're spending money
+                  with no clear ROI.
+                </p>
+              </div>
+              <span
+                class="text-[9px] font-bold text-brand uppercase tracking-wider block mt-auto pt-2"
+                >Cost: Money Down the Drain</span
+              >
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_10px_25px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 rounded-lg p-5 flex flex-col justify-between h-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div>
+                <div class="flex items-center space-x-3 mb-3">
+                  <div
+                    class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                  >
+                    <svg
+                      class="w-4.5 h-4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <h3
+                    class="font-display font-bold text-xs sm:text-sm text-white"
+                  >
+                    Time-Consuming Tasks
+                  </h3>
+                </div>
+                <p class="text-zinc-555 text-[11px] leading-relaxed mb-4">
+                  Manually replying to leads and following up eats up your time
+                  every day.
+                </p>
+              </div>
+              <span
+                class="text-[9px] font-bold text-brand uppercase tracking-wider block mt-auto pt-2"
+                >Cost: Hours of Productivity</span
+              >
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_10px_25px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 rounded-lg p-5 flex flex-col justify-between h-full"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div>
+                <div class="flex items-center space-x-3 mb-3">
+                  <div
+                    class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                  >
+                    <svg
+                      class="w-4.5 h-4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2.5"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <h3
+                    class="font-display font-bold text-xs sm:text-sm text-white"
+                  >
+                    Poor Follow-Up
+                  </h3>
+                </div>
+                <p class="text-zinc-555 text-[11px] leading-relaxed mb-4">
+                  Most leads don't convert because follow-ups are slow or
+                  inconsistent.
+                </p>
+              </div>
+              <span
+                class="text-[9px] font-bold text-brand uppercase tracking-wider block mt-auto pt-2"
+                >Cost: Lost Opportunities</span
+              >
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_10px_25px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 rounded-lg p-5 flex flex-col justify-between h-full"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div>
+                <div class="flex items-center space-x-3 mb-3">
+                  <div
+                    class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                  >
+                    <svg
+                      class="w-4.5 h-4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2.5"
+                    >
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3
+                    class="font-display font-bold text-xs sm:text-sm text-white"
+                  >
+                    No Systems in Place
+                  </h3>
+                </div>
+                <p class="text-zinc-555 text-[11px] leading-relaxed mb-4">
+                  Without systems and automation, your business can't scale.
+                </p>
+              </div>
+              <span
+                class="text-[9px] font-bold text-brand uppercase tracking-wider block mt-auto pt-2"
+                >Cost: Stagnant Growth</span
+              >
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_10px_25px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 rounded-lg p-5 flex flex-col justify-between h-full"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <div>
+                <div class="flex items-center space-x-3 mb-3">
+                  <div
+                    class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                  >
+                    <svg
+                      class="w-4.5 h-4.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="2.5"
+                    >
+                      <polyline
+                        points="23 6 13.5 15.5 8.5 10.5 1 18"
+                      ></polyline>
+                      <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                  </div>
+                  <h3
+                    class="font-display font-bold text-xs sm:text-sm text-white"
+                  >
+                    Hard to Scale
+                  </h3>
+                </div>
+                <p class="text-zinc-555 text-[11px] leading-relaxed mb-4">
+                  You're stuck doing everything yourself. Scaling feels
+                  impossible.
+                </p>
+              </div>
+              <span
+                class="text-[9px] font-bold text-brand uppercase tracking-wider block mt-auto pt-2"
+                >Cost: Burnout & Plateaus</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Solutions Section (With Funnel Image) ================= -->
+    <section
+      id="solutions"
+      class="relative py-24 bg-bgDark border-t border-white/[0.03] bg-grid-pattern"
+    >
+      <div class="glow-backdrop top-[20%] right-[-10%] opacity-40"></div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span
+            class="text-xs font-bold uppercase tracking-widest text-brand mb-2.5 block"
+            >OUR SOLUTIONS</span
+          >
+          <h2
+            class="font-display font-extrabold text-3xl sm:text-4xl text-white mb-4"
+          >
+            Smart Ads. Powerful Automation.
+            <span class="text-brand">Real Results.</span>
+          </h2>
+          <p class="text-zinc-500 text-xs sm:text-sm leading-relaxed">
+            We combine targeted paid traffic campaigns with custom-built CRM
+            systems to generate qualified leads and convert them on autopilot.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left: Funnel Image Mockup -->
+          <div
+            class="lg:col-span-5 relative animate-float-delayed"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <div
+              class="absolute -inset-1 bg-brand/20 blur-xl rounded-xl opacity-30 animate-pulse-glow"
+            ></div>
+            <div
+              class="rounded-xl border border-white/[0.08] bg-[#0c0c0e] p-2.5 shadow-2xl relative"
+            >
+              <div
+                class="flex items-center justify-between pb-2 border-b border-white/[0.04] mb-2 px-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-red-500/60"></span>
+                  <span
+                    class="w-1.5 h-1.5 rounded-full bg-yellow-500/60"
+                  ></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-green-500/60"></span>
+                </div>
+                <span class="text-[8px] text-zinc-500 font-mono"
+                  >marketing_funnel.png</span
+                >
+              </div>
+              <img
+                src="img/marketing_funnel.png"
+                alt="Marketing Automation Funnel"
+                class="w-full h-auto rounded"
+              />
+            </div>
+          </div>
+
+          <!-- Right: Cards Grid -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Card 1 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-5 hover:border-brand/40 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-5px_rgba(255,90,31,0.05)] transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div
+                class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand mb-3"
+              >
+                <svg
+                  class="w-4.5 h-4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                >
+                  <path
+                    d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+              </div>
+              <h3
+                class="font-display font-bold text-xs sm:text-sm text-white mb-1.5"
+              >
+                Lead Gen Campaigns
+              </h3>
+              <p class="text-zinc-555 text-[11px] leading-relaxed">
+                High-converting direct response ads targeting your ideal
+                prospect profile to secure inquiries fast.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-5 hover:border-brand/40 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-5px_rgba(255,90,31,0.05)] transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div
+                class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand mb-3"
+              >
+                <svg
+                  class="w-4.5 h-4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3
+                class="font-display font-bold text-xs sm:text-sm text-white mb-1.5"
+              >
+                Workflow Automations
+              </h3>
+              <p class="text-zinc-555 text-[11px] leading-relaxed">
+                Triggers that push new leads to contact sheets, assign calls to
+                team members, and kick off instant SMS.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-5 hover:border-brand/40 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-5px_rgba(255,90,31,0.05)] transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div
+                class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand mb-3"
+              >
+                <svg
+                  class="w-4.5 h-4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3
+                class="font-display font-bold text-xs sm:text-sm text-white mb-1.5"
+              >
+                Speed-to-Lead Follow-up
+              </h3>
+              <p class="text-zinc-555 text-[11px] leading-relaxed">
+                Auto-responses within 60 seconds of form submission via SMS,
+                Email, and WhatsApp to maximize capture.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-5 hover:border-brand/40 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-5px_rgba(255,90,31,0.05)] transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand mb-3"
+              >
+                <svg
+                  class="w-4.5 h-4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <h3
+                class="font-display font-bold text-xs sm:text-sm text-white mb-1.5"
+              >
+                Self-Booking Engine
+              </h3>
+              <p class="text-zinc-555 text-[11px] leading-relaxed">
+                Let pre-qualified leads book direct strategy slots on your
+                calendar, complete with automated reminders.
+              </p>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-5 hover:border-brand/40 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-5px_rgba(255,90,31,0.05)] transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <div
+                class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand mb-3"
+              >
+                <svg
+                  class="w-4.5 h-4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                >
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <h3
+                class="font-display font-bold text-xs sm:text-sm text-white mb-1.5"
+              >
+                Live ROI Dashboards
+              </h3>
+              <p class="text-zinc-555 text-[11px] leading-relaxed">
+                See precisely how many pesos go in and how many customers come
+                out, with 100% transparent metrics.
+              </p>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-5 hover:border-brand/40 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_-5px_rgba(255,90,31,0.05)] transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-8 h-8 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand mb-3"
+              >
+                <svg
+                  class="w-4.5 h-4.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3
+                class="font-display font-bold text-xs sm:text-sm text-white mb-1.5"
+              >
+                Done-For-You Support
+              </h3>
+              <p class="text-zinc-555 text-[11px] leading-relaxed">
+                We write, configure, launch, and manage the entire framework,
+                providing ongoing optimizations weekly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About Us Section ================= -->
+    <section
+      id="about"
+      class="relative py-24 bg-bgDark border-t border-white/[0.03] bg-grid-pattern"
+    >
+      <div class="glow-backdrop top-[30%] left-[-10%] opacity-40"></div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <!-- Split Layout: Large Heading Statement Left, 3 Paragraph Detail Cards Right -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start"
+        >
+          <!-- Left Side: Massive Heading Statement -->
+          <div
+            class="lg:col-span-5 flex flex-col justify-start"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-brand mb-3 block"
+              >ABOUT US</span
+            >
+            <h2
+              class="font-display font-extrabold text-3xl sm:text-4xl lg:text-[40px] tracking-tight leading-[1.15] text-white mb-6"
+            >
+              Mas gusto pa naming
+              <span class="text-brand text-gradient-brand"
+                >tanggihan ang client</span
+              >
+              kaysa mag-deliver ng
+              <span class="text-zinc-400 italic font-medium">generic</span> na
+              result.
+            </h2>
+            <p
+              class="text-zinc-500 text-xs sm:text-sm leading-relaxed max-w-md"
+            >
+              We operate on absolute transparency. When we build marketing ads
+              and systems, we don’t look for easy volume—we aim for real
+              partnership and undeniable growth.
+            </p>
+
+            <!-- Subtle decorative graphic element -->
+            <div class="hidden lg:flex items-center space-x-3 mt-8">
+              <div class="w-10 h-[1px] bg-brand/40"></div>
+              <span
+                class="text-[10px] font-mono text-zinc-600 uppercase tracking-widest"
+                >GALAW INTEGRITY FIRST</span
+              >
+            </div>
+          </div>
+
+          <!-- Right Side: Detail Paragraph Cards -->
+          <div class="lg:col-span-7 space-y-6">
+            <!-- Card 1: Selectivity & Commitment -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-6 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_15px_30px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 relative group"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <!-- Icon/Number Indicator -->
+              <div
+                class="absolute top-6 right-6 text-brand/10 group-hover:text-brand/20 transition-colors text-4xl font-display font-black select-none pointer-events-none"
+              >
+                01
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                >
+                  <!-- Partnership Icon -->
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-sm text-white mb-2">
+                    No-Nonsense Partnerships
+                  </h3>
+                  <p class="text-zinc-400 text-xs leading-relaxed">
+                    We don't take every client. If we say yes, we stick with you
+                    the whole way. Strategy, execution, results—we're there for
+                    all of it. We're not the type na mag-de-deliver tapos gone.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Ads & Automation -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-6 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_15px_30px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 relative group"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <!-- Icon/Number Indicator -->
+              <div
+                class="absolute top-6 right-6 text-brand/10 group-hover:text-brand/20 transition-colors text-4xl font-display font-black select-none pointer-events-none"
+              >
+                02
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                >
+                  <!-- Cog/Automation Icon -->
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-sm text-white mb-2">
+                    Targeted Ads & Automation
+                  </h3>
+                  <p class="text-zinc-400 text-xs leading-relaxed">
+                    Here's what we do. We run your ads. Real targeting, real
+                    leads, not just big numbers na wala namang kwenta. Then
+                    automation follows up and closes the sale for you. It keeps
+                    working kahit tulog ka na. No chasing leads. You focus on
+                    the business, we handle the growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Burning and Risk Mitigation -->
+            <div
+              class="bg-[#0c0c0e] border border-white/5 rounded-xl p-6 hover:border-brand/40 hover:-translate-y-1 hover:shadow-[0_15px_30px_-5px_rgba(255,90,31,0.06)] transition-all duration-300 relative group"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <!-- Icon/Number Indicator -->
+              <div
+                class="absolute top-6 right-6 text-brand/10 group-hover:text-brand/20 transition-colors text-4xl font-display font-black select-none pointer-events-none"
+              >
+                03
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-full border border-brand/20 bg-brand/5 flex items-center justify-center text-brand shrink-0"
+                >
+                  <!-- Shield Icon -->
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.952 11.952 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-sm text-white mb-2">
+                    Risk-Free Client Guarantee
+                  </h3>
+                  <p class="text-zinc-400 text-xs leading-relaxed">
+                    A lot of our clients got burned before. Broken promises,
+                    agencies gone after getting paid. That's why we operate this
+                    way. Try us once. If you don't see the difference, don't
+                    come back. We're okay with that risk. Kasi that never
+                    happened.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Testimonials Section ================= -->
+    <section
+      id="testimonials"
+      class="relative py-24 bg-bgDark border-t border-white/[0.03] overflow-hidden"
+    >
+      <!-- Subtle Dot Grid Overlay -->
+      <div
+        class="absolute inset-0 bg-[radial-gradient(rgba(255,90,31,0.04)_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none opacity-85 z-0"
+      ></div>
+      <!-- Ambient orange back-lighting -->
+      <div class="glow-backdrop bottom-[10%] left-[-15%] opacity-40"></div>
+      <div
+        class="absolute top-[20%] right-[-10%] w-[450px] h-[450px] bg-brand/10 rounded-full blur-[140px] pointer-events-none z-0"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span
+            class="text-xs font-bold uppercase tracking-widest text-brand mb-2.5 block"
+            >CLIENT RESULTS</span
+          >
+          <h2
+            class="font-display font-extrabold text-3xl sm:text-4xl text-white mb-4"
+          >
+            Real Feedback. <span class="text-brand">Real Growth Systems.</span>
+          </h2>
+          <p class="text-zinc-500 text-xs sm:text-sm leading-relaxed">
+            See how our client acquisition systems are driving outcomes for
+            business owners just like you.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left: Growth Chart Image Mockup -->
+          <div
+            class="lg:col-span-5 relative animate-float-gentle"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <div
+              class="absolute -inset-1 bg-brand/20 blur-xl rounded-xl opacity-30 animate-pulse-glow"
+            ></div>
+            <div
+              class="rounded-xl border border-white/[0.08] bg-[#0c0c0e] p-2.5 shadow-2xl relative"
+            >
+              <div
+                class="flex items-center justify-between pb-2 border-b border-white/[0.04] mb-2 px-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-red-500/60"></span>
+                  <span
+                    class="w-1.5 h-1.5 rounded-full bg-yellow-500/60"
+                  ></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-green-500/60"></span>
+                </div>
+                <span class="text-[8px] text-zinc-500 font-mono"
+                  >growth_chart.png</span
+                >
+              </div>
+              <img
+                src="img/growth_chart.png"
+                alt="Client Growth Graph"
+                class="w-full h-auto rounded"
+              />
+            </div>
+          </div>
+
+          <!-- Right: Stacked Testimonial Cards -->
+          <div class="lg:col-span-7 flex flex-col space-y-4 relative z-10">
+            <!-- Testimonial 1 -->
+            <div
+              class="bg-[#0c0c0e]/80 backdrop-blur-sm border-y border-r border-white/[0.06] border-l-4 border-l-brand rounded-r-xl rounded-l-md p-6 relative shadow-lg hover:border-y-brand/35 hover:border-r-brand/35 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_-5px_rgba(255,90,31,0.08)] transition-all duration-300 animate-float-card1"
+              data-aos="fade-left"
+              data-aos-delay="50"
+            >
+              <span
+                class="text-brand font-serif text-5xl absolute top-3 left-6 pointer-events-none opacity-20"
+                >“</span
+              >
+              <div class="relative z-10 mb-4 pt-3">
+                <div class="flex items-center mb-2.5">
+                  <!-- 5 Stars Rating -->
+                  <div class="flex items-center space-x-0.5 text-brand">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-zinc-355 text-xs sm:text-sm leading-relaxed">
+                  Everything went smoothly. The communication was easy and they
+                  were always easy to talk to. The service was good. Consistent
+                  and reliable every single time.
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between border-t border-white/[0.03] pt-4"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center font-display font-extrabold text-[10px] text-brand border border-brand/20"
+                  >
+                    N
+                  </div>
+                  <div>
+                    <h4 class="font-display font-bold text-xs text-white">
+                      Noel Torales
+                    </h4>
+                    <p class="text-zinc-555 text-[9px]">Biz Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div
+              class="bg-[#0c0c0e]/80 backdrop-blur-sm border-y border-r border-white/[0.06] border-l-4 border-l-brand rounded-r-xl rounded-l-md p-6 relative shadow-lg hover:border-y-brand/35 hover:border-r-brand/35 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_-5px_rgba(255,90,31,0.08)] transition-all duration-300 animate-float-card2"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              <span
+                class="text-brand font-serif text-5xl absolute top-3 left-6 pointer-events-none opacity-20"
+                >“</span
+              >
+              <div class="relative z-10 mb-4 pt-3">
+                <div class="flex items-center mb-2.5">
+                  <!-- 5 Stars Rating -->
+                  <div class="flex items-center space-x-0.5 text-brand">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-zinc-350 text-xs sm:text-sm leading-relaxed">
+                  100% professional. They handle their clients with so much
+                  patience, assurance, and kindness. They deliver exactly what
+                  you ask for and always update you constantly. Their work is
+                  very nice and professional.
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between border-t border-white/[0.03] pt-4"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center text-brand border border-brand/20"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.166 4.9L10 1.154 17.834 4.9A2 2 0 0119 6.77v4.993a8 8 0 01-3.61 6.683L10 20l-5.39-3.554A8 8 0 011 11.762V6.77a2 2 0 011.166-1.87zm7.085 9.085a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414l-3.293 3.293-1.293-1.293a1 1 0 00-1.414 1.414l2 2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-display font-bold text-xs text-white">
+                      Jerick Mendoza
+                    </h4>
+                    <p class="text-zinc-555 text-[9px]">Verified Client</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div
+              class="bg-[#0c0c0e]/80 backdrop-blur-sm border-y border-r border-white/[0.06] border-l-4 border-l-brand rounded-r-xl rounded-l-md p-6 relative shadow-lg hover:border-y-brand/35 hover:border-r-brand/35 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_-5px_rgba(255,90,31,0.08)] transition-all duration-300 animate-float-card3"
+              data-aos="fade-left"
+              data-aos-delay="250"
+            >
+              <span
+                class="text-brand font-serif text-5xl absolute top-3 left-6 pointer-events-none opacity-20"
+                >“</span
+              >
+              <div class="relative z-10 mb-4 pt-3">
+                <div class="flex items-center mb-2.5">
+                  <!-- 5 Stars Rating -->
+                  <div class="flex items-center space-x-0.5 text-brand">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-zinc-300 text-xs sm:text-sm leading-relaxed">
+                  We are very satisfied with the system developed by Galaw Smart
+                  Team. They were responsive, professional, and committed to
+                  delivering a quality system that truly helped improve our
+                  workflow. Even after project completion, they continued to
+                  provide support and quickly fix any issues.
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between border-t border-white/[0.03] pt-4"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-8 h-8 rounded-full bg-brand/10 flex items-center justify-center font-display font-extrabold text-[10px] text-brand border border-brand/20"
+                  >
+                    T
+                  </div>
+                  <div>
+                    <h4 class="font-display font-bold text-xs text-white">
+                      Taki
+                    </h4>
+                    <p class="text-zinc-555 text-[9px]">Marketing Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Final CTA Section ================= -->
+    <section class="relative py-16 bg-bgDark border-t border-white/[0.03]">
+      <div class="glow-backdrop -bottom-10 -right-20 opacity-30"></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <!-- Horizontal Conversion Banner -->
+        <div
+          class="bg-gradient-to-r from-[#0c0c0e] via-[#16161a] to-[#0c0c0e] border border-white/5 rounded-2xl p-8 sm:p-10 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden shadow-2xl"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+        >
+          <div class="relative z-10 max-w-xl text-left">
+            <h2
+              class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-2 leading-tight"
+            >
+              Ready to Get More Leads and
+              <span class="text-brand">Grow Your Business?</span>
+            </h2>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Book your free strategy call today and let's build a system that
+              works for you.
+            </p>
+          </div>
+
+          <div class="relative z-10 flex-shrink-0 w-full md:w-auto">
+            <a
+              href="#booking-card"
+              class="inline-flex items-center justify-center w-full md:w-auto px-8 py-4 bg-brand hover:bg-brand-dark text-white font-bold rounded shadow-lg transition-all duration-300 text-xs uppercase tracking-wider group"
+            >
+              BOOK MY FREE STRATEGY CALL
+              <svg
+                class="w-4.5 h-4.5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer
+      class="bg-bgDark border-t border-white/[0.03] py-10 bg-grid-pattern"
+    >
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-5"
+        >
+          <!-- Left: Logo & Copyright -->
+          <div
+            class="flex flex-col items-center md:items-start space-y-1.5 text-center md:text-left"
+          >
+            <div class="flex items-center space-x-2">
+              <span
+                class="font-display font-extrabold text-base tracking-tight text-brand"
+                >GALAW</span
+              >
+              <span
+                class="font-sans font-bold text-xs tracking-wider text-white"
+                >SMART ADVERTISING</span
+              >
+            </div>
+            <p class="text-zinc-650 text-[10px]">
+              &copy; 2025 Galaw Smart Advertising. All rights reserved.
+            </p>
+          </div>
+
+          <!-- Right: Legal Links -->
+          <div class="flex items-center space-x-5 text-xs text-zinc-500">
+            <a href="#" class="hover:text-brand transition-colors"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-brand transition-colors"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Custom Logic Script (Triggers on 'components-ready') -->
+    <script src="js/main.js"></script>
+
+    <!-- Trigger components-ready event for main.js -->
+    <script>
+      document.dispatchEvent(new CustomEvent("components-ready"));
+    </script>
+  </body>
+</html>

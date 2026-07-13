@@ -1,0 +1,10 @@
+# Folders to ignore
+Screenshots/
+node_modules/
+vendor/
+
+# Environment configurations
+.env
+
+# Large files
+aaaa.png
