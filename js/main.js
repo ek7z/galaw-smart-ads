@@ -1,4 +1,9 @@
-document.addEventListener('components-ready', () => {
+let isInitialized = false;
+
+function initializeApp() {
+  if (isInitialized) return;
+  isInitialized = true;
+
   // --- AOS Initialization ---
   if (typeof AOS !== 'undefined') {
     AOS.init({
@@ -372,4 +377,12 @@ document.addEventListener('components-ready', () => {
   if (dynamicText) {
     typeEffect();
   }
-});
+}
+
+// Run initialization when components or DOM are ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeApp);
+} else {
+  initializeApp();
+}
+document.addEventListener('components-ready', initializeApp);
