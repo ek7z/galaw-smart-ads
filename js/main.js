@@ -306,7 +306,6 @@ document.addEventListener('components-ready', () => {
       });
     });
   }
-  }
 
   // --- Scroll Progress Bar ---
   window.addEventListener('scroll', () => {
